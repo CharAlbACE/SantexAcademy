@@ -5,23 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        p {
+            margin-right: 35px; 
+        }
+        button.redondo { 
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 9px 20px;
+            height: 36px;
+            }
+
+            h1 {
+                margin: 0px 400px;
+                font-family: Inter, Arial, Helvetica, sans-serif;
+                font-size: 28px;
+            }
+            div#Introduction-Actions {
+                display: flex;
+                justify-content: center;
+            }
+        
+    </style>
 </head>
 <body>
-    <div id="header "style="border-bottom: 1px solid gray; display: flex; padding: 30px 30px;">
+    <div id="header "style="border-bottom: 1px solid gray; display: flex; padding: 30px 30px; justify-content: space-between;">
             <div id="header-left">
             <img src="logo.svg">
             </div>
         
-                <div id="header-right" style="display: flex; justify-content: space-between;">
-                <p>Nosotros</p>
-                <p>Programas</p>
-                <p>Capacitaciones</p>
-                <p>Alianza</p>
-                <p>Contacto</p>
-                <button>Sumate +</button>
+                <div id="header-right" style="display: flex;">
+                    <p>Nosotros</p>
+                    <p>Programas</p>
+                    <p>Capacitaciones</p>
+                    <p>Alianza</p>
+                    <p>Contacto</p>
+                    <button class="redondo">Sumate +</button>
                 </div>
     </div>
-
+    <div id="Introduction">
+        <div id="introduction-Text">
+            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
+        </div>
+        <div id="Introduction-Actions">
+            <button class="redondo">Contactanos -></button>
+            <button class="redondo">Sumate +</button>
+        </div>
+    </div>
     
 </body>
 </html>
